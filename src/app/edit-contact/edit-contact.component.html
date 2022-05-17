@@ -1,0 +1,42 @@
+<div class="formDetails" id="editDetails">
+    <form [formGroup]=" editRecordForm" (ngSubmit)="onUpdate(editIndex)" autocomplete="off">
+        <div>
+            <label>Name</label>
+            <input formControlName="name"  type="text" name="name" id="name" required>
+        </div>
+        <div *ngIf="editRecordForm.get('name')?.invalid && editRecordForm.get('name')?.touched">
+            Name is required.
+          </div>
+        <div>
+            <label>Email</label>
+            <input formControlName="email" type="text" name="email" id="email" required>
+        </div>
+        <div *ngIf="editRecordForm.get('email')?.invalid && editRecordForm.get('email')?.touched">
+            Email is required.
+          </div>
+        <div>
+            <label>Mobile</label>
+            <input formControlName="mobile" type="text" name="mobile" id="mobile" required>
+        </div>
+        <div *ngIf="editRecordForm.get('mobile')?.invalid && editRecordForm.get('mobile')?.touched">
+            Mobile number is required.
+          </div>
+        <div>
+            <label>Landline</label>
+            <input formControlName="landline" type="text" name="landline" id="landline" required>
+        </div>
+        <div>
+            <label>Website</label>
+            <input formControlName="website" type="text" name="website" id="website" required>
+        </div>
+        <div>
+            <label>Address</label>
+            <input formControlName="address" type="text" name="address" id="address" required>
+        </div>
+        <div id="add" class="addButton">
+            <button id="updateEntry" type="submit" [disabled]="!editRecordForm.valid">Update</button>
+        </div>
+    </form>
+</div>
+
+

@@ -1,0 +1,139 @@
+*{
+    cursor:default;
+}
+.addressBook {
+    font-family: 'Century Gothic Regular', Times, serif;
+}
+.tab{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.contact{
+    font-family: 'Open Sans', sans-serif;
+}
+.listName,.listEmail,.listPhone{
+    font-family: 'Roboto', sans-serif;
+}
+#contactName{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.icon span,p{
+    font-family: 'Roboto', sans-serif;
+}
+.addressBook {
+    background-color: rgba(51, 153, 204, 255);
+    color: white;
+    font-size:40px;
+    padding: 10px 0px 20px 15px;
+}
+.navigation {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-size: large;
+}
+li{
+    padding-right: 164px;
+    display: block;
+}
+.list {
+    float: left;
+    padding: 8px 10px;
+}
+body {
+    margin: 0px;
+}
+.tab {
+    background-color: black;
+    color: white;
+    padding: 0px 15px 0px 8px;
+    font-weight: bold;
+}
+.logo {
+    float: right;
+    padding: 5px 10px 2px 0px;
+}
+li {
+    font-size: small;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.contact{
+    color: black;
+    font-weight: bold;
+    margin: 20px 12px 10px 12px;
+    display: block;
+}
+.empList{
+    width: 350px;
+    min-height: 75px;
+    border: rgba(220,220,220,255) solid;
+    float: left;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.listName{
+    font-size:large;
+    margin-bottom: 10px;
+}
+#employeeDetails{
+    width: 250px;
+}
+.formDetails{
+    width: 650px;
+    border:rgba(220,220,220,255) solid;
+    height: 550px;
+    margin-left: 390px;
+    padding-top: 10px;
+    box-shadow: 5px 5px 5px 2px grey;
+}
+label{
+    display: block;
+    margin-left: 10px;
+}
+input{
+    margin-left: 10px;
+    width: 500px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.empList:hover,.bgBlue{
+    background-color: #cee7f2;
+}
+.hide{
+    visibility: hidden;
+    display: none;
+}
+#close{
+    background-color: rgba(70,140,0,255);
+    float: right;
+    margin-right: 10px;
+    color: white;
+}
+.addButton button{
+    background-color: rgba(70,140,0,255);
+    margin-left: 525px;
+    height: 30px;
+    width: 100px;
+    color: white;
+    font-size: large;
+}
+p{
+    margin-left: 600px;
+}
+#edit{
+    margin-left: 150px; 
+    height: 20px;
+    display: inline;
+}
+#delete{
+    margin-left: 50px;
+}
+.icon{
+    margin-left: 800px;
+}
+.hiden{
+    opacity: 0;
+}

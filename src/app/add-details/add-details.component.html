@@ -1,0 +1,41 @@
+<div class="container formDetails" id="addDetails">
+    <form [formGroup]="addRecordForm" (ngSubmit)="onSubmit()" autocomplete="off">
+        <div>
+            <label>Name</label>
+            <input formControlName="name" type="text" name="name" id="name" required>
+        </div>
+        <div *ngIf="addRecordForm.get('name')?.invalid && addRecordForm.get('name')?.touched">
+            Name is required.
+        </div>
+        <div>
+            <label>Email</label>
+            <input formControlName="email" type="text" name="email" id="email" required>
+        </div>
+        <div *ngIf="addRecordForm.get('email')?.invalid && addRecordForm.get('email')?.touched">
+            Email is required.
+        </div>
+        <div>
+            <label>Mobile</label>
+            <input formControlName="mobile" type="text" name="mobile" id="mobile" required>
+        </div>
+        <div *ngIf="addRecordForm.get('mobile')?.invalid && addRecordForm.get('mobile')?.touched">
+            Mobile number is required.
+        </div>
+        <div>
+            <label>Landline</label>
+            <input formControlName="landline" type="text" name="landline" id="landline" required>
+        </div>
+        <div>
+            <label>Website</label>
+            <input formControlName="website" type="text" name="website" id="website" required>
+        </div>
+        <div>
+            <label>Address</label>
+            <input formControlName="address" type="text" name="address" id="address" required>
+        </div>
+        <div id="add" class="addButton">
+            <button
+                [disabled]="!addRecordForm.valid" id="addEntry" type="submit">Add</button>
+        </div>
+    </form>
+</div>

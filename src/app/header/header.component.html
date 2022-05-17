@@ -1,0 +1,13 @@
+<div class="addressBook">Address Book</div>
+<div class="tab">
+    <ul class="navigation">
+        <li class="list">HOME</li>
+        <li class="list" (click)="hideRecord()" routerLink="/add">+ADD</li>
+        <img class="logo" src="../../assets/blog-icon.png" alt="">
+    </ul>
+</div>
+<div class="contact">
+    Contacts
+</div>
+<app-records (click)="hideRecord()"></app-records>
+<app-contact-details *ngIf="displayContact"></app-contact-details>

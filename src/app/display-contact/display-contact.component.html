@@ -1,0 +1,15 @@
+<div id="details">
+    <div class="data" *ngIf="selectedRecord">
+        <div class="icon">
+            <img id="edit" src="../../assets/edit1.jpg" alt=""> <span routerLink="/edit/{{selectedRecord.id}}" id="editData">EDIT</span> 
+            <img id="delete" src="../../assets/delete2.png" alt=""> <span id="deleteData" (click)="deleteRecord(selectedRecord.id!)">DELETE</span>
+        </div>
+        <p id="contactName"><span>{{selectedRecord.name}}</span></p>
+        <p id="contactEmail">Email: <span>{{selectedRecord.email}}</span></p>
+        <p id="contactMobile">Mobile: <span>{{selectedRecord.mobile}}</span> </p>
+        <p id="contactLandline">Landline: <span>{{selectedRecord.landline}}</span> </p>
+        <p id="contactWebsite">Website: <span>{{selectedRecord.website}}</span> </p>
+        <p id="contactAddress">Address: <span>{{selectedRecord.address}}</span></p>
+    </div>
+</div>
+<router-outlet></router-outlet>
